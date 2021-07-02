@@ -1,5 +1,5 @@
 {% set name = "spec-classes" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3dca2cb4a89e536cd75decd1de0432226e2072afb9d0e828e7ff0db9344a6f0d
+  sha256: 7044e2c5807c65f9115f07254ef75795d8e6c336d7e1e0e989c35563917fcb95
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A simple way to incrementally build type-checked specifications.'
+  summary: A simple way to incrementally build type-checked specifications.
   description: |
     This package allows you to turn classes into specifications with
     type-checked attributes and utility methods for incrementally building the
