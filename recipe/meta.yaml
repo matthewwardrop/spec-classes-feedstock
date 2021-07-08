@@ -1,5 +1,5 @@
 {% set name = "spec-classes" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7044e2c5807c65f9115f07254ef75795d8e6c336d7e1e0e989c35563917fcb95
+  sha256: e64ad2dc4060110b209a1b95514d8ccc6aa26ff8f521cf7b952c7423f91f6be0
 
 build:
   number: 0
