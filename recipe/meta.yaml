@@ -1,5 +1,5 @@
 {% set name = "spec-classes" %}
-{% set version = "1.1.5" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ccc2d77987a15914e35e31f1a2f64096c4fa20d7c68f84917206599e0d6aac59
+  sha256: 7c072ad29e0767d926d389d913d2d161358db64d9257e1bcaa84f64cab3fb4b7
 
 build:
   number: 0
@@ -17,14 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.7.2
     - setupmeta >=2.7.11
   run:
     - python >=3.7
-    - cached-property
-    - inflect
-    - lazy-object-proxy
-    - setuptools
+    - cached-property >=1.5.2
+    - inflect >=5.0.0
+    - lazy-object-proxy >=1.5.0
 
 test:
   imports:
