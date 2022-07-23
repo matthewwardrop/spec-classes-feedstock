@@ -1,13 +1,13 @@
 {% set name = "spec-classes" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 389709ffa0b15f545d902ed7cdca12d7d96b9b348bb1cf0d90d2478f6ab4964a
+  url: https://files.pythonhosted.org/packages/6f/06/0c8d616a63d99dcf19cf1532d92a231b376ce94a60ab6e14e65aa601911b/spec-classes-1.2.3.tar.gz
+  sha256: b9cebfc33d981702b285b0f2a1041d88bcc523d21aebaf9c02436542b6cd15d6
 
 build:
   number: 0
