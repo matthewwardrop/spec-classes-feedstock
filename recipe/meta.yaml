@@ -1,13 +1,13 @@
 {% set name = "spec-classes" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/6f/06/0c8d616a63d99dcf19cf1532d92a231b376ce94a60ab6e14e65aa601911b/spec-classes-1.2.3.tar.gz
-  sha256: b9cebfc33d981702b285b0f2a1041d88bcc523d21aebaf9c02436542b6cd15d6
+  url: https://files.pythonhosted.org/packages/b7/42/c95bdefb7aeb054a3fdcc420f10d422207b3d7cad9a1a48d25fb7d6bd4b2/spec_classes-1.2.4.tar.gz
+  sha256: 09371043834b6293a45947ca9acc35ea92dce28d701ee1c1c566a1cfbce4e710
 
 build:
   number: 0
@@ -19,8 +19,8 @@ requirements:
     - pip
     - python >=3.7.2
     - setupmeta >=2.7.11
-    - poetry
-    - poetry-dynamic-versioning
+    - hatch
+    - hatch-vcs
   run:
     - python >=3.7
     - cached-property >=1.5.2
