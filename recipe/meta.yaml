@@ -1,13 +1,13 @@
 {% set name = "spec-classes" %}
-{% set version = "1.5.3" %}
+{% set version = "1.5.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/fb/c7/015259bd8a03c5a6469b6d9f3c8d30bc42bf4df715a1b8f696645b55798a/spec_classes-1.5.3.tar.gz
-  sha256: f1c32639bf80d88ec3d8ce2ceb0e6127c7cb7e5e4c955a2fab73d7be5ac68065
+  url: https://files.pythonhosted.org/packages/ea/e3/3e1cc9f24a27bf9fc49d90c9f474b5591e9222c1b26df52e47ae993a31d8/spec_classes-1.5.4.tar.gz
+  sha256: c7bf56fff07183247ec7373761527ad9a4688bde9d3815e57707f783e242c6b5
 
 build:
   number: 0
@@ -19,7 +19,7 @@ requirements:
     - pip
     - python >=3.7.2
     - setupmeta >=2.7.11
-    - hatch
+    - hatchling
     - hatch-vcs
   run:
     - python >=3.7
